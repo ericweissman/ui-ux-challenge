@@ -2,161 +2,173 @@
 <html>
 <head>
   <title>Idea Box Triples</title>
-  <link rel="stylesheet" type="text/css" href="styles.scss" />
-  <link rel="stylesheet" type="text/css" href="normalize.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-    crossorigin="anonymous">
+  crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
   <body>
     <header>
+      <i class="fas fa-bars"></i>
       <h1>TriTracker</h1>
       <div class='nav-controls'>
-        <ul>
-          <li>Dashboard</li>
-          <li>My Goals</li>
-          <li>Account</li>
-          <li>Share</li>
+        <ul class='controls'>
+          <li class='control-btn'>Dashboard</li>
+          <li class='control-btn'>My Goals</li>
+          <li class='control-btn'>Account</li>
+          <li class='control-btn'>Share</li>
         </ul>
       </div>
     </header>
     <section>
-      <div class='user-icon'>
-        <img>
-        <p>Welcome back Grace</p>
+      <div class='section-tiles user-icon'>
+        <img class='user-img' src='http://thatschurch.com/wp-content/uploads/2009/11/runninglady.JPG'>
+        <p>Welcome <br> Back Grace</p>
       </div>
-      <div>
-        <!-- icon -->
-        <p>15/50</p>
-        <p>miles</p>
+      <div class='section-tiles events'>
+        <i class="fas fa-swimmer"></i>
+        <p>15/50 <br> miles </p>
       </div>
-      <div>
-        <!-- icon -->
-        <p>200/500</p>
-        <p>miles</p>
+      <div class='section-tiles events'>
+        <i class="fas fa-bicycle"></i>
+        <p>200/500 <br> miles </p>
       </div>
-      <div>
-        <!-- icon -->
-        <p>60/100</p>
-        <p>miles</p>
+      <div class='section-tiles events'>
+        <i class="fas fa-running"></i>
+        <p>60/100 <br> miles </p>
       </div>
-      <div>
-        <!-- icon -->
-        <p>15 days</p>
-        <p>until race</p>
+      <div class='section-tiles events'>
+        <i class="fas fa-medal"></i>
+        <p>15 days <br> until race</p>
       </div>
     </section>
-    <main>
-      <div>
-        <p>Sunday</p>
-        <div>
-          <p>Swim</p>
-          <p>2 miles</p>
-          <p>Bike</p>
-          <p>10 miles</p>
-        </div>
-        <div>
-          <!-- icon -->
-          <p>Log Today's Workout</p>
-        </div>
-      </div>
-      <div>
-        <p>Sunday</p>
-        <div>
-          <p>Swim</p>
-          <p>2 miles</p>
-          <p>Bike</p>
-          <p>10 miles</p>
-        </div>
-        <div>
-          <!-- icon -->
-          <p>Log Today's Workout</p>
-        </div>
-      </div>
-      <div>
-        <p>Sunday</p>
-        <div>
-          <p>Swim</p>
-          <p>2 miles</p>
-          <p>Bike</p>
-          <p>10 miles</p>
-        </div>
-        <div>
-          <!-- icon -->
-          <p>Log Today's Workout</p>
-        </div>
-      </div>
-      <div>
-        <p>Sunday</p>
-        <div>
-          <p>Swim</p>
-          <p>2 miles</p>
-          <p>Bike</p>
-          <p>10 miles</p>
-        </div>
-        <div>
-          <!-- icon -->
-          <p>Log Today's Workout</p>
-        </div>
-      </div>
-      <div>
-        <p>Sunday</p>
-        <div>
-          <p>Swim</p>
-          <p>2 miles</p>
-          <p>Bike</p>
-          <p>10 miles</p>
-        </div>
-        <div>
-          <!-- icon -->
-          <p>Log Today's Workout</p>
-        </div>
-      </div>
-      <div>
-        <p>Sunday</p>
-        <div>
-          <p>Swim</p>
-          <p>2 miles</p>
-          <p>Bike</p>
-          <p>10 miles</p>
-        </div>
-        <div>
-          <!-- icon -->
-          <p>Log Today's Workout</p>
-        </div>
-      </div>
-      <div>
-        <p>Sunday</p>
-        <div>
-          <p>Swim</p>
-          <p>2 miles</p>
-          <p>Bike</p>
-          <p>10 miles</p>
-        </div>
-        <div>
-          <!-- icon -->
-          <p>Log Today's Workout</p>
-        </div>
-      </div>
-    </main>
+<main>
+
+
+  <div class="flex darkBlue hide">
+    <p>Sunday</p>
+    <div class="darkBlue workout">
+      <p>Swim</p>
+      <p>2 miles</p>
+      <p>Bike</p>
+      <p>10 miles</p>
+    </div>
+    <div class="darkBlue workout">
+      <i class="fas fa-plus-square"></i>
+      <p>Log Today's Workout</p>
+    </div>
+  </div>
+
+
+  <div class="flex lightBlue hide">
+    <p>Monday</p>
+    <div class="lightBlue workout">
+      <p>Swim</p>
+      <p>2 miles</p>
+      <p>Bike</p>
+      <p>10 miles</p>
+    </div>
+    <div class="lightBlue workout">
+      <i class="fas fa-plus-square"></i>
+      <p>Log Today's Workout</p>
+    </div>
+  </div>
+
+
+  <div class="flex darkBlue tuesday">
+    <p class="darkBlue tuesday">Tuesday</p>
+    <div class="darkBlue workout">
+      <p>Swim</p>
+      <p>2 miles</p>
+      <p>Bike</p>
+      <p>10 miles</p>
+    </div>
+    <div class="darkBlue workout">
+      <i class="fas fa-plus-square"></i>
+      <p>Log Today's Workout</p>
+    </div>
+  </div>
+
+
+  <div class="flex lightBlue hide">
+    <p class="lightBlue">Wednesday</p>
+    <div class="lightBlue workout">
+      <p>Swim</p>
+      <p>2 miles</p>
+      <p>Bike</p>
+      <p>10 miles</p>
+    </div>
+    <div class="lightBlue workout">
+      <i class="fas fa-plus-square"></i>
+      <p>Log Today's Workout</p>
+    </div>
+  </div>
+
+
+
+  <div class="flex darkBlue hide">
+    <p class="darkBlue">Thursday</p>
+    <div class="darkBlue workout">
+      <p>Swim</p>
+      <p>2 miles</p>
+      <p>Bike</p>
+      <p>10 miles</p>
+    </div>
+    <div class="darkBlue workout">
+      <i class="fas fa-plus-square"></i>
+      <p>Log Today's Workout</p>
+    </div>
+  </div>
+
+
+  <div class="flex lightBlue hide">
+    <p class="lightBlue">Friday</p>
+    <div class="lightBlue workout">
+      <p>Swim</p>
+      <p>2 miles</p>
+      <p>Bike</p>
+      <p>10 miles</p>
+    </div>
+    <div class="lightBlue workout">
+      <i class="fas fa-plus-square"></i>
+      <p>Log Today's Workout</p>
+    </div>
+  </div>
+
+
+  <div class="flex darkBlue hide">
+    <p class="darkBlue">Saturday</p>
+    <div class="darkBlue workout">
+      <p>Swim</p>
+      <p>2 miles</p>
+      <p>Bike</p>
+      <p>10 miles</p>
+    </div>
+    <div class="darkBlue workout">
+      <i class="fas fa-plus-square"></i>
+      <p>Log Today's Workout</p>
+    </div>
+  </div>
+
+</main>
+
     <footer>
-      <div>
-        <p>Week 4 Goals</p>
-      </div>
-      <div>
-        <!-- icon -->
+      <p class="footer-header">Week<br>4<br>Goals</p>
+      <div class="footer-div">
+        <i class="fas fa-swimmer"></i>
         <p>5 miles</p>
         <button>Update</button>
       </div>
-      <div>
-        <!-- icon -->
-        <p>5 miles</p>
+      <div class="footer-div">
+        <i class="fas fa-bicycle"></i>
+        <p>30 miles</p>
         <button>Update</button>
       </div>
-      <div>
-        <!-- icon -->
-        <p>5 miles</p>
+      <div class="footer-div">
+        <i class="fas fa-running"></i>
+        <p>12 miles</p>
         <button>Update</button>
       </div>
     </footer>
